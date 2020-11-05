@@ -26,7 +26,7 @@
 // Only one valid answer exists.
 
 
-
+// what I submitted on leetcode:
 let twoSum = (nums, target) => {
     let indices = [];
     let val1;
@@ -42,4 +42,19 @@ let twoSum = (nums, target) => {
 };
 
 
-twoSum([3,5,4,7,9,14,6], 16);
+
+// one of the fastest solutions:
+const twoSum = (nums, target) => {
+    let indexOf = {};
+    for(let i = 0; i < nums.length; i++) {
+        let complement = target - nums[i] ;
+        if (complement in indexOf) {
+            console.log(indexOf[complement], i);
+            return [indexOf[complement], i];
+        }
+        indexOf[nums[i]] = i;
+    }
+};
+
+
+
