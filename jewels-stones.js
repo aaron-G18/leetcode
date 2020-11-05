@@ -41,7 +41,8 @@ let stones = "abBcCAbA";
 numJewelsInStones(jewels, stones);
 
 
-// really concise solution found on site:
+
+// really concise solution found on site using reduce:
 
 // var numJewelsInStones = function(J, S) {
 //     return S.split``.reduce((acc,cur)=> acc+J.includes(cur),0)
