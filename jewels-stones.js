@@ -14,3 +14,25 @@
 
 // S and J will consist of letters and have length at most 50.
 // The characters in J are distinct.
+
+
+// /**
+//  * @param {string} J
+//  * @param {string} S
+//  * @return {number}
+//  */
+
+var numJewelsInStones = function(J, S) {
+    
+};
+
+const numJewelsInStones = (J, S) => {
+    let totalJewels = 0;
+    for (let i=0; i<S.length; i++) {
+        if (S[i] in J) {
+            totalJewels++;
+        }
+    };
+    console.log("total jewels = " + totalJewels);
+    return totalJewels;
+};
