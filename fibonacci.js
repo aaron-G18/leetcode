@@ -1,3 +1,5 @@
+// function to generate the fibonacci sequence out to the "argument" positions.
+
 function generateFibonaccis(n) {
     var fib = [1, 1];
     for (var i = 2; i < n; i++) {
