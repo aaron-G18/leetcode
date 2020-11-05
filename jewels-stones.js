@@ -22,17 +22,18 @@
 //  * @return {number}
 //  */
 
-var numJewelsInStones = function(J, S) {
-    
-};
-
 const numJewelsInStones = (J, S) => {
     let totalJewels = 0;
     for (let i=0; i<S.length; i++) {
-        if (S[i] in J) {
+        if (J.includes(S[i])) {
             totalJewels++;
         }
     };
     console.log("total jewels = " + totalJewels);
     return totalJewels;
 };
+
+let jewels = "aA";
+let stones = "abBcCAbA";
+
+numJewelsInStones(jewels, stones);
