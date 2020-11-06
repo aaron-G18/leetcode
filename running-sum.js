@@ -30,7 +30,7 @@
 //  * @return {number[]}
 //  */
 
-const nums = [1,1,1,1,1];
+const nums = [3,1,2,10,1];
 
 
 const runningSum = (nums) => {
