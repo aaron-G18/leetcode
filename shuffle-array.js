@@ -24,3 +24,24 @@
 // 1 <= n <= 500
 // nums.length == 2n
 // 1 <= nums[i] <= 10^3
+
+// /**
+//  * @param {number[]} nums
+//  * @param {number} n
+//  * @return {number[]}
+//  */
+
+const nums = [1,2,3,4,4,3,2,1];
+const n = 4;
+
+const shuffle = (nums, n) => {
+    let newArr = [];
+    for (let i = 0; i<n; i++) {
+        newArr.push(nums[i]);
+        newArr.push(nums[n+i]);
+    };
+    console.log(newArr);
+    return newArr;
+};
+
+shuffle(nums, n);
