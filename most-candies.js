@@ -62,3 +62,12 @@ let candies = [2,3,5,1,3];
 let extraCandies = 3;
 kidsWithCandies(candies, extraCandies);
 // expected output: [true,true,true,false,true] 
+
+
+// another solution using the rest operator to find the max in the candies argument and then using array.map:
+
+// var kidsWithCandies = function(candies, extraCandies) {
+//     const maxCandies = Math.max(...candies);
+//     console.log(candies.map((candy) => candy + extraCandies >= maxCandies));
+//     return candies.map((candy) => candy + extraCandies >= maxCandies);
+// };
