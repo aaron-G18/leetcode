@@ -53,11 +53,12 @@ const kidsWithCandies = (candies, extraCandies) => {
             output.push(false);
         }
     };
-    console.log(output);
     return output;
 };
 
+
+// test case:
 let candies = [2,3,5,1,3];
 let extraCandies = 3;
 kidsWithCandies(candies, extraCandies);
-// Output: [true,true,true,false,true] 
+// expected output: [true,true,true,false,true] 
