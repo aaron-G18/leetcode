@@ -47,3 +47,19 @@ numJewelsInStones(jewels, stones);
 // var numJewelsInStones = function(J, S) {
 //     return S.split``.reduce((acc,cur)=> acc+J.includes(cur),0)
 // };
+
+
+// here is another good solution. Need to learn more about this form of mapping!
+
+// var numJewelsInStones = function(J, S) {
+//     let map = {},counter=0
+//     for(let char of J){
+//         map[char]=true
+//     }
+    
+//     for(let char of S){
+//         if(map[char]) counter++
+//     }
+    
+//     return counter
+// };
