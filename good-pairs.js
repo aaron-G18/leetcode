@@ -35,5 +35,29 @@
 //  */
 
 var numIdenticalPairs = function(nums) {
-    
+    let numberExists = {}; 
+    let pair = 0;
+    for(val of nums){
+        numberExists[val] ? numberExists[val]++ : numberExists[val] = 1;
+        console.log("nums[val] = ", nums[val]);
+        console.log("numberExists[val] = ", numberExists[val]);
+    };
+
+    console.log("numberExists after loop = ", numberExists);
+    for(val in numberExists){
+        if(numberExists[val] > 1){
+            pair += Math.round(  (numberExists[val] * (  (numberExists[val] -1)  )  ) /2);
+        }
+    }
+    console.log(pair);
+    return pair;
 };
+
+
+
+
+
+
+
+let nums = [1,2,3,1,1,3];
+numIdenticalPairs(nums);
