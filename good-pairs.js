@@ -35,15 +35,21 @@
 //  */
 
 var numIdenticalPairs = function(nums) {
+    // create a map of nums.
     let numberExists = {}; 
+
+    // create variable for number of pairs.
     let pair = 0;
+
+    // basically a "frequency counter" (count how many instances of each number in nums array).
     for(val of nums){
         numberExists[val] ? numberExists[val]++ : numberExists[val] = 1;
         console.log("nums[val] = ", nums[val]);
         console.log("numberExists[val] = ", numberExists[val]);
     };
-
     console.log("numberExists after loop = ", numberExists);
+    
+    // calculate how many pairs for each number using the frequency values ( val * (val-1) ) / 2
     for(val in numberExists){
         if(numberExists[val] > 1){
             pair += Math.round(  (numberExists[val] * (  (numberExists[val] -1)  )  ) /2);
@@ -53,11 +59,6 @@ var numIdenticalPairs = function(nums) {
     return pair;
 };
 
-
-
-
-
-
-
+// test case:
 let nums = [1,2,3,1,1,3];
 numIdenticalPairs(nums);
