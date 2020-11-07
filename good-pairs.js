@@ -34,6 +34,24 @@
 //  * @return {number}
 //  */
 
+
+// submitted code commented out. Solution below (uncommented) with notes and console logs to explain/show what is going on.
+
+// var numIdenticalPairs = function(nums) {
+//     let totalPairs = 0;
+//     let numFrequency = {}; 
+//     for(value of nums){
+//         numFrequency[value] ? numFrequency[value]++ : numFrequency[value] = 1;
+//     };
+//     for(value in numFrequency){
+//         if(numFrequency[value] > 1){
+//             totalPairs += Math.round((numFrequency[value] * ((numFrequency[value] -1))) /2);
+//         }
+//     };
+//     return totalPairs;
+// };
+
+
 var numIdenticalPairs = function(nums) {
     // create a map of nums.
     let numberExists = {}; 
