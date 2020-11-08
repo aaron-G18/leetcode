@@ -51,7 +51,7 @@ const restoreString = (s, indices) => {
         console.log("newString = ", newString);
     };
     console.log(newString.join(""));
-    return newString;
+    return newString.join("");
 };
 
 let s = "codeleet";
