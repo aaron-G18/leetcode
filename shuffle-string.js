@@ -43,7 +43,7 @@
 //  * @return {string}
 //  */
 
- const restoreString = (s, indices) => {
+const restoreString = (s, indices) => {
     let newString = [];
     for (let i = 0; i < s.length; i++) {
         newString[indices[i]] = s[i];
