@@ -43,6 +43,17 @@
 //  * @return {string}
 //  */
 
- var restoreString = function(s, indices) {
-    
+ const restoreString = (s, indices) => {
+    let newString = [];
+    for (let i = 0; i < s.length; i++) {
+        newString.push(s[indices[i]]);
+        console.log("indices[i] = ", indices[i]);
+        console.log("newString = ", newString);
+    };
+    console.log(newString.join(""));
+    return newString;
 };
+
+let s = "codeleet";
+let indices = [4,5,6,7,0,2,1,3];
+restoreString(s, indices);
