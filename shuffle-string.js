@@ -46,7 +46,7 @@
  const restoreString = (s, indices) => {
     let newString = [];
     for (let i = 0; i < s.length; i++) {
-        newString.push(s[indices[i]]);
+        newString[indices[i]] = s[i];
         console.log("indices[i] = ", indices[i]);
         console.log("newString = ", newString);
     };
