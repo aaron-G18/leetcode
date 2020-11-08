@@ -36,6 +36,31 @@
 //  * @return {number[]}
 //  */
 
-var smallerNumbersThanCurrent = function(nums) {
+const smallerNumbersThanCurrent = (nums) => {
+    let numsArr = nums.map(x => x);
+    console.log(numsArr);
+    let sortedArr = numsArr.sort((a, b) => {return a-b});
     
+    console.log("sortedArr = ", sortedArr);
+    let res = [];
+    for (let i = 0; i < nums.length; i++) {
+        res.push((sortedArr.indexOf(nums[i])));
+    };
+    console.log("res = ", res);
+    console.log("expected = [4,0,1,1,3]")
+    return res;
 };
+
+
+// clean solution found on site using rest operator:
+
+// var smallerNumbersThanCurrent = function(nums) {
+//     var sorted = [...nums].sort((a, b) => a - b);
+//     console.log("sorted = ", sorted);
+//     console.log(nums.map(num => sorted.indexOf(num)));
+//     return nums.map(num => sorted.indexOf(num));
+// };
+
+
+let nums = [8,1,2,2,3];
+smallerNumbersThanCurrent(nums);
