@@ -46,5 +46,16 @@ const subtractProductAndSum = (n) => {
     return prod-sum;
 };
 
+
+// solution that is faster using an accumulator:
+
+// var subtractProductAndSum = function(n) {
+//     var chars = n.toString().split(""); 
+//     return (
+//       chars.reduce((acc, curr) => acc * parseInt(curr)) -
+//       chars.reduce((acc, curr) => acc + parseInt(curr), 0)
+//     );
+// };
+
 let n = 4421;
 subtractProductAndSum(n);
