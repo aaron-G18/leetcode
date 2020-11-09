@@ -32,6 +32,13 @@
 //  * @return {number[]}
 //  */
 
-var decompressRLElist = function(nums) {
-    
+const decompressRLElist = (nums) => {
+    let res = [];
+    for (let i = 0; i< nums.length; i+=2) {
+        res.push(   new Array(nums[i]).fill(nums[i+1])    );
+    };
+    console.log(res);
 };
+
+let nums = [1,2,3,4];
+decompressRLElist(nums);
