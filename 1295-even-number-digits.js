@@ -34,6 +34,17 @@
 //  * @return {number}
 //  */
 
-var findNumbers = function(nums) {
-    
+const findNumbers = (nums) => {
+    // loop over nums and for each index, change to string and check string lenght. If length is even number, increment running total (count++) .
+    let count = 0;
+    for (let i = 0; i < nums.length; i++) {
+        if ((nums[i].toString().length)%2 === 0) {
+            count++;
+        }
+    };
+    return count;
 };
+
+let nums = [555,901,482,1771];
+findNumbers(nums);
+// Output: 1
