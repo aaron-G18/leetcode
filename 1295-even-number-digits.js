@@ -47,4 +47,9 @@ const findNumbers = (nums) => {
 
 let nums = [555,901,482,1771];
 findNumbers(nums);
-// Output: 1
+// Expected Output: 1
+
+// Success
+// Details 
+// Runtime: 72 ms, faster than 96.73% of JavaScript online submissions for Find Numbers with Even Number of Digits.
+// Memory Usage: 39.5 MB, less than 11.93% of JavaScript online submissions for Find Numbers with Even Number of Digits.
