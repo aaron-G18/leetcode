@@ -23,6 +23,22 @@
 //  * @param {number[]} A
 //  * @return {number[]}
 //  */
-const sortedSquares = (A) {
-
+const sortedSquares = (A) => {
+    let newArr = [];
+    for (let i = 0; i < A.length; i++) {
+        newArr.push(A[i]*A[i]);
+    };
+    console.log(newArr.sort(function(a,b) {return a-b}));
+    return newArr.sort();
 };
+
+let input = [-4,-1,0,3,10];
+sortedSquares(input);
+
+// Expected output: [0,1,9,16,100]
+
+
+// Success
+// Details 
+// Runtime: 116 ms, faster than 84.60% of JavaScript online submissions for Squares of a Sorted Array.
+// Memory Usage: 45.1 MB, less than 24.88% of JavaScript online submissions for Squares of a Sorted Array.
