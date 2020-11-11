@@ -38,6 +38,12 @@
 //  * @param {number} num
 //  * @return {number}
 //  */
-var maximum69Number  = function(num) {
-    
+const maximum69Number = (num) => {
+    console.log(parseInt(num.toString().replace("6", "9")));
+    return (parseInt(num.toString().replace("6", "9")));
 };
+
+
+let num = 9699;
+maximum69Number(num);
+// Expected output: 9969
