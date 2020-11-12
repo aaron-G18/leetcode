@@ -50,4 +50,9 @@ const flipAndInvertImage = (A) => {
 
 let input = [[1,1,0,0],[1,0,0,1],[0,1,1,1],[1,0,1,0]];
 flipAndInvertImage(input);
-// Output: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]
+// Expected output: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]
+
+// Success
+// Details 
+// Runtime: 92 ms, faster than 23.49% of JavaScript online submissions for Flipping an Image.
+// Memory Usage: 40.5 MB, less than 37.47% of JavaScript online submissions for Flipping an Image.
