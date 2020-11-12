@@ -56,3 +56,10 @@ flipAndInvertImage(input);
 // Details 
 // Runtime: 92 ms, faster than 23.49% of JavaScript online submissions for Flipping an Image.
 // Memory Usage: 40.5 MB, less than 37.47% of JavaScript online submissions for Flipping an Image.
+
+
+// Here is a great simple solution found on the site using reverse() and map inside a map:
+
+// var flipAndInvertImage = function(A) {
+//     return A.map((a) => a.reverse().map((b) => b === 0 ? 1 : 0));
+// };
