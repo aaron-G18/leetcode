@@ -41,6 +41,6 @@
 //  * @param {string[][]} paths
 //  * @return {string}
 //  */
-var destCity = function(paths) {
+const destCity = (paths) => {
     
 };
