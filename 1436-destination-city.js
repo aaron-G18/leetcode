@@ -42,7 +42,15 @@
 //  * @return {string}
 //  */
 const destCity = (paths) => {
-    
+    let arr = [];
+    for(let i = 0; i < paths.length; i++) {
+        arr.push(paths[i][0])
+    };
+    for(let i = 0; i < paths.length; i++) {
+        if(!arr.includes(paths[i][1])) {
+            return paths[i][1]
+        }
+    };
 };
 
 
