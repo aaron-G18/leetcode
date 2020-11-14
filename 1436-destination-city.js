@@ -54,16 +54,7 @@ const destCity = (paths) => {
 };
 
 
-// solution from the site:
-
-// var destCity = function(paths) {
-//     let arr = [];
-//     for(let i = 0; i < paths.length; i++) {
-//         arr.push(paths[i][0])
-//     }
-//     for(let i = 0; i < arr.length; i++) {
-//         if(!arr.includes(paths[i][1])) {
-//             return paths[i][1]
-//         }
-//     }
-// };
+// Success
+// Details 
+// Runtime: 80 ms, faster than 84.01% of JavaScript online submissions for Destination City.
+// Memory Usage: 39.7 MB, less than 71.38% of JavaScript online submissions for Destination City.
