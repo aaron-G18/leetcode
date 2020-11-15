@@ -87,3 +87,10 @@ const minTimeToVisitAllPoints = (points) => {
 let points = [[1,1],[3,4],[-1,0]];
 // Expected output: 7
 minTimeToVisitAllPoints(points); 
+
+// Submission results for trimmed solution:
+
+// Runtime: 80 ms, faster than 76.23% of JavaScript online submissions for Minimum Time Visiting All Points.
+// Memory Usage: 40 MB, less than 59.53% of JavaScript online submissions for Minimum Time Visiting All Points.
+
+// Turns out it's the same memory usage. 
