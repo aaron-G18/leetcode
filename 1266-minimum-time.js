@@ -48,6 +48,24 @@
 //  * @param {number[][]} points
 //  * @return {number}
 //  */
-var minTimeToVisitAllPoints = function(points) {
-    
+
+const minTimeToVisitAllPoints = (points) => {
+    let coordArr = points;
+    let sum = 0;
+    for(let i = 0; i < coordArr.length-1; i++) {
+        let currentCoords = [];
+        let nextCoords = [];
+        let xDiff = 0;
+        let yDiff = 0;
+        currentCoords = coordArr[i];
+        nextCoords = coordArr[i+1];
+        xDiff = Math.abs(currentCoords[0] - (nextCoords[0]));
+        yDiff = Math.abs(currentCoords[1] - nextCoords[1]);
+        sum += Math.max(xDiff, yDiff);
+    };
+    return sum;
 };
+
+let points = [[1,1],[3,4],[-1,0]];
+// Expected output: 7
+minTimeToVisitAllPoints(points); 
