@@ -25,3 +25,8 @@
 const toLowerCase = (str) => {
     return (str.toLowerCase());
 };
+
+// Success
+// Details 
+// Runtime: 84 ms, faster than 10.38% of JavaScript online submissions for To Lower Case.
+// Memory Usage: 37.6 MB, less than 79.62% of JavaScript online submissions for To Lower Case.
