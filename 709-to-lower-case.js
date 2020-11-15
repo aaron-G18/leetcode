@@ -21,6 +21,7 @@
 //  * @param {string} str
 //  * @return {string}
 //  */
-var toLowerCase = function(str) {
-    
+
+const toLowerCase = (str) => {
+    return (str.toLowerCase());
 };
