@@ -45,10 +45,37 @@
 //  */
 const removeOuterParentheses = (S) => {
 
-// make an object that loops over the string and assigns each [i] as an id and value = count depth
-// so start with depth is 1 and then every "(" = i++, then set the depth for that id, every ")" = set the depth value and then i--
-// once you have the complete string mapped to the object, simply delete all the id's with value 1 and concat a new string.
-// If there are no id's left in the object, return a blank string ("").
+// make a new array from looping over the string S and assigning each index as an "id" and "count depth"
+// so start with depth is 1 for the first index (S[0]), and then every "(" = index++, then assign the depth for the current S[i] index, every ")" = assign the depth value and then index--
+// once you have the complete string looped over, simply delete all the arrays with depth value 1 and concat a new string.
+// If there are only depth 1 arrays, return a blank string ("").
 
+// e.g. for input "(()())(())"  ...
+// here is that input spaced out to see more easily            (      (      )      (      )      )      (      (      )      )
+// your holding array would be sub arrays of [index, depth]  [0,1], [1,2], [2,2], [3,2], [4,2], [5,1], [6,1], [7,2], [8,2], [9,1]
+// So if you get rid of every sub array with a depth of 1, the output = "()()()"
 
+    let holdingArr = [];
+    let depth = 1;
+    holdingArr.push([0,1]);
+    let res = "";
+    for (let i = 1; i < S.length; i++) {
+        if (S[i] === "(") {
+            depth++;
+            holdingArr.push([i, depth]);
+        } else if (S[i] === ")") {
+            holdingArr.push([i, depth]);
+            depth--;
+        }
+    };
+    for (let i = 0; i < holdingArr.length; i++) {
+        if (holdingArr[i][1] != 1) {
+            res += S[i];
+        }
+    };
+    return res;
 };
+
+let input = "(()())(())";
+removeOuterParentheses(input);
+// Expected output: "()()()"
