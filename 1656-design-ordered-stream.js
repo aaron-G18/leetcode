@@ -92,3 +92,11 @@ var OrderedStream = function(n) {
         return res;
     };
 };
+
+// Submission results:
+// Success
+// Details 
+// Runtime: 176 ms, faster than 100.00% of JavaScript online submissions for Design an Ordered Stream.
+// Memory Usage: 50.3 MB, less than 77.63% of JavaScript online submissions for Design an Ordered Stream.
+
+// Negligible difference.
