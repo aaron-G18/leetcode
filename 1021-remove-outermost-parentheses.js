@@ -45,4 +45,10 @@
 //  */
 const removeOuterParentheses = (S) => {
 
+// make an object that loops over the string and assigns each [i] as an id and value = count depth
+// so start with depth is 1 and then every "(" = i++, then set the depth for that id, every ")" = set the depth value and then i--
+// once you have the complete string mapped to the object, simply delete all the id's with value 1 and concat a new string.
+// If there are no id's left in the object, return a blank string ("").
+
+
 };
