@@ -79,3 +79,9 @@ const removeOuterParentheses = (S) => {
 let input = "(()())(())";
 removeOuterParentheses(input);
 // Expected output: "()()()"
+
+// Submission results
+// Success
+// Details 
+// Runtime: 88 ms, faster than 31.45% of JavaScript online submissions for Remove Outermost Parentheses.
+// Memory Usage: 42.9 MB, less than 5.45% of JavaScript online submissions for Remove Outermost Parentheses.
