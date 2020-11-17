@@ -74,3 +74,21 @@ OrderedStream.prototype.insert = function(id, value) {
 // Details 
 // Runtime: 168 ms, faster than 100.00% of JavaScript online submissions for Design an Ordered Stream.
 // Memory Usage: 50.6 MB, less than 67.11% of JavaScript online submissions for Design an Ordered Stream.
+
+
+// Going to try to clean it up and make the second part (insert) part of the original constructor.
+
+var OrderedStream = function(n) {
+    this.ptrArr = new Array(n);
+    this.ptrCount = 0;
+    this.insert = function(id, value) {
+        this.ptrArr[id-1] = value;
+        let res = [];
+        if (id-1 === this.ptrCount) {
+            while (this.ptrArr[this.ptrCount]) {
+                res.push(this.ptrArr[this.ptrCount++]);
+            }
+        }
+        return res;
+    };
+};
