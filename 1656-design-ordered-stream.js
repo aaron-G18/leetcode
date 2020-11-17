@@ -38,12 +38,19 @@
 // Each call to insert will have a unique id.
 // Exactly n calls will be made to insert.
 
+/** 
+ * Your OrderedStream object will be instantiated and called as such:
+ * var obj = new OrderedStream(n)
+ * var param_1 = obj.insert(id,value)
+ */
+
 
 // /**
 //  * @param {number} n
 //  */
 var OrderedStream = function(n) {
-    
+    this.ptrArr = new Array(n);
+    this.ptrCount = 0;
 };
 
 // /** 
@@ -52,11 +59,13 @@ var OrderedStream = function(n) {
 //  * @return {string[]}
 //  */
 OrderedStream.prototype.insert = function(id, value) {
-    
+    this.ptrArr[id-1] = value;
+    let res = [];
+    if (id-1 === this.ptrCount) {
+        while (this.ptrArr[this.ptrCount]) {
+            res.push(this.ptrArr[this.ptrCount++]);
+        }
+    }
+    return res;
 };
 
-/** 
- * Your OrderedStream object will be instantiated and called as such:
- * var obj = new OrderedStream(n)
- * var param_1 = obj.insert(id,value)
- */
