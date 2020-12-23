@@ -41,6 +41,13 @@
 //  * @return {number}
 //  */
 const maximumWealth = (accounts) => {
-    
+    let maxWealth = 0;
+    for (const x of accounts) {
+        let sum = x.reduce((accumulator, currentValue) => accumulator + currentValue);
+        if (sum > maxWealth) {
+            maxWealth = sum;
+        };
+    };
+    return maxWealth;
 };
 
