@@ -51,3 +51,10 @@ const maximumWealth = (accounts) => {
     return maxWealth;
 };
 
+
+// Submission results:
+
+// Success
+// Details 
+// Runtime: 72 ms, faster than 94.00% of JavaScript online submissions for Richest Customer Wealth.
+// Memory Usage: 38.8 MB, less than 21.07% of JavaScript online submissions for Richest Customer Wealth.
