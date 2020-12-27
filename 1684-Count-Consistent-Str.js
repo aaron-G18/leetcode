@@ -35,7 +35,14 @@
 //  * @param {string[]} words
 //  * @return {number}
 //  */
-var countConsistentStrings = function(allowed, words) {
-    
+const countConsistentStrings = (allowed, words) => {
+    let total = 0;
+    let okLetters = allowed.split("");
+    for (str of words) {
+        if (str.split("").every((letter) => okLetters.includes(letter))) {
+            total++;
+        };
+    };
+    return total;
 };
 
