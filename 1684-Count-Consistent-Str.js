@@ -46,3 +46,8 @@ const countConsistentStrings = (allowed, words) => {
     return total;
 };
 
+// submission details
+// Success
+// Details 
+// Runtime: 140 ms, faster than 30.65% of JavaScript online submissions for Count the Number of Consistent Strings.
+// Memory Usage: 52.4 MB, less than 11.64% of JavaScript online submissions for Count the Number of Consistent Strings.
