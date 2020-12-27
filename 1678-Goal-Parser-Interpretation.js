@@ -47,3 +47,9 @@ const interpret = (command) => {
     };
     return final;
 };
+
+// submission results
+// Success
+// Details 
+// Runtime: 80 ms, faster than 60.55% of JavaScript online submissions for Goal Parser Interpretation.
+// Memory Usage: 38.8 MB, less than 16.26% of JavaScript online submissions for Goal Parser Interpretation.
