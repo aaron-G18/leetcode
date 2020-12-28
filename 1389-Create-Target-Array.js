@@ -58,3 +58,7 @@ const createTargetArray = (nums, index) => {
     };
     return targetArr;
 };
+
+// submission results
+// Runtime: 76 ms, faster than 78.38% of JavaScript online submissions for Create Target Array in the Given Order.
+// Memory Usage: 38.5 MB, less than 73.42% of JavaScript online submissions for Create Target Array in the Given Order.
