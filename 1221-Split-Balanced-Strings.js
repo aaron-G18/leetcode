@@ -39,6 +39,18 @@
 //  * @param {string} s
 //  * @return {number}
 //  */
-var balancedStringSplit = function(s) {
-    
+const balancedStringSplit = (s) => {
+    let sum = 0;
+    let maxStrings = 0;
+    for (let x of s) {
+        if (x === "R") {
+            sum++;
+        } else if (x === "L") {
+            sum--;
+        };
+        if (sum === 0) {
+            maxStrings++;
+        };
+    }
+    return maxStrings;
 };
