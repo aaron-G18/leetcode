@@ -54,3 +54,9 @@ const balancedStringSplit = (s) => {
     }
     return maxStrings;
 };
+
+// Submission results:
+// Success
+// Details 
+// Runtime: 72 ms, faster than 94.40% of JavaScript online submissions for Split a String in Balanced Strings.
+// Memory Usage: 38.8 MB, less than 20.03% of JavaScript online submissions for Split a String in Balanced Strings.
