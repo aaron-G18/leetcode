@@ -37,6 +37,28 @@
 //  * @param {number} high
 //  * @return {number}
 //  */
-var rangeSumBST = function(root, low, high) {
-    
+const rangeSumBST = (root, low, high) => {
+    let sum = 0;
+    let arr = new Array();
+    arr.push(root);
+    for (let num of arr) {
+        if (num >= low && num <= high) {
+            sum += num;
+        }
+    }
+    console.log(sum);
+    return sum;
 };
+
+// Binary tree is not just a simple array input. Need to figure these out.
+
+
+// Input: root = [10,5,15,3,7,null,18], low = 7, high = 15
+// Output: 32
+// Example 2:
+
+let root = [10,5,15,3,7,null,18];
+let low = 7;
+let high = 15;
+
+rangeSumBST(root, low, high);
