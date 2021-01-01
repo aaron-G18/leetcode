@@ -39,6 +39,20 @@
 //  * @param {string} s
 //  * @return {boolean}
 //  */
-var halvesAreAlike = function(s) {
-    
+const halvesAreAlike = (s) => {
+    let firstHalfVowelCount = 0;
+    let secondHalfVowelCount = 0;
+    let vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+    for (let i = 0; i < s.length; i++) {
+        if (i < (s.length / 2) && vowels.includes(s[i])) {
+            firstHalfVowelCount++;
+        } else if (i >= (s.length / 2) && vowels.includes(s[i])) {
+            secondHalfVowelCount++;
+        };
+    };
+    if (firstHalfVowelCount === secondHalfVowelCount) {
+        return true;
+    } else {
+        return false;
+    }
 };
