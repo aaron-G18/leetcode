@@ -56,3 +56,10 @@ const halvesAreAlike = (s) => {
         return false;
     }
 };
+
+// Submission results:
+
+// Success
+// Details 
+// Runtime: 72 ms, faster than 97.99% of JavaScript online submissions for Determine if String Halves Are Alike.
+// Memory Usage: 39.2 MB, less than 78.45% of JavaScript online submissions for Determine if String Halves Are Alike.
