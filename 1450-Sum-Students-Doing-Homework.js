@@ -57,3 +57,8 @@ const busyStudent = (startTime, endTime, queryTime) => {
     };
     return total;
 };
+
+// Submission results
+
+// Runtime: 80 ms, faster than 61.77% of JavaScript online submissions for Number of Students Doing Homework at a Given Time.
+// Memory Usage: 38.9 MB, less than 10.53% of JavaScript online submissions for Number of Students Doing Homework at a Given Time.
