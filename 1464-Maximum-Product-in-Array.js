@@ -28,6 +28,15 @@
 //  * @param {number[]} nums
 //  * @return {number}
 //  */
-var maxProduct = function(nums) {
-    
+const maxProduct = (nums) => {
+    let maxProd;
+    let sortedArr = nums.sort(
+        function compareNumbers(a, b) {
+            return b - a;
+          }
+    );
+    maxProd = ((sortedArr[0] - 1) * (sortedArr[1] - 1));
+    return maxProd;
 };
+
+
