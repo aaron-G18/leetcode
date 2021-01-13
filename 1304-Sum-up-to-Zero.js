@@ -39,3 +39,8 @@ const sumZero = (n) => {
     }
     return arr;
 };
+
+
+//Submission results:
+// Runtime: 84 ms, faster than 54.77% of JavaScript online submissions for Find N Unique Integers Sum up to Zero.
+// Memory Usage: 39.3 MB, less than 51.76% of JavaScript online submissions for Find N Unique Integers Sum up to Zero.
