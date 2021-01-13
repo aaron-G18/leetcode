@@ -27,4 +27,15 @@
 //  * @param {number} n
 //  * @return {number[]}
 //  */
-
+const sumZero = (n) => {
+    let arr = [];
+    if (n % 2 != 0) {
+        arr.push(0);
+    };
+    while (arr.length < n) {
+        let currentNum = (arr.length + 1);
+        arr.push(currentNum);
+        arr.push(-currentNum);
+    }
+    return arr;
+};
