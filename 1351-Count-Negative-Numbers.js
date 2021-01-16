@@ -34,6 +34,13 @@
 //  * @param {number[][]} grid
 //  * @return {number}
 //  */
-var countNegatives = function(grid) {
-    
+const countNegatives = (grid) => {
+    let newArr = grid.flat();
+    let count = 0;
+    for (let num of newArr) {
+        if (num < 0) {
+            count++;
+        };
+    };
+    return count;
 };
