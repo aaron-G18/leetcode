@@ -44,3 +44,10 @@ const countNegatives = (grid) => {
     };
     return count;
 };
+
+
+// Submission results:
+// Success
+// Details 
+// Runtime: 88 ms, faster than 29.33% of JavaScript online submissions for Count Negative Numbers in a Sorted Matrix.
+// Memory Usage: 42.2 MB, less than 11.54% of JavaScript online submissions for Count Negative Numbers in a Sorted Matrix.
