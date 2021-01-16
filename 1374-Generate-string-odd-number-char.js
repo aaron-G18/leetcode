@@ -34,4 +34,6 @@ const generateTheString = (n) => {
     return (n % 2 === 0)? "a".repeat(n-1) + b : "a".repeat(n);
 };
 
-
+// Submission results:
+// Runtime: 80 ms, faster than 56.90% of JavaScript online submissions for Generate a String With Characters That Have Odd Counts.
+// Memory Usage: 38.7 MB, less than 78.88% of JavaScript online submissions for Generate a String With Characters That Have Odd Counts.
