@@ -31,7 +31,6 @@
 // what I submitted on leetcode:
 let twoSum = (nums, target) => {
     let indices = [];
-    let val1;
     for (let i = 0; i < nums.length; i++) {
         for (let j = (i+1); j < nums.length; j++) {
             if (nums[i] + nums[j] === target) {
@@ -43,6 +42,9 @@ let twoSum = (nums, target) => {
     };
 };
 
+// Submission results:
+// Runtime: 124 ms, faster than 5.07% of JavaScript online submissions for Two Sum.
+// Memory Usage: 38.1 MB, less than 97.35% of JavaScript online submissions for Two Sum.
 
 
 // one of the fastest solutions:
