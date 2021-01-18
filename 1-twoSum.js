@@ -58,5 +58,10 @@ const twoSum = (nums, target) => {
     }
 };
 
+// Submission results:
 
+// Success
+// Details 
+// Runtime: 80 ms, faster than 60.99% of JavaScript online submissions for Two Sum.
+// Memory Usage: 38.8 MB, less than 52.24% of JavaScript online submissions for Two Sum.
 
