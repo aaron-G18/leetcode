@@ -21,6 +21,27 @@
  * @param {number} right
  * @return {number[]}
  */
-var selfDividingNumbers = function(left, right) {
-    
+
+const selfDividingNumbers = (left, right) => {
+    let numArr = [];
+    let answerArr = [];
+    for (let i = left; i <= right; i++) {
+        numArr.push(i);
+    };
+    for (let num of numArr) {
+        let digitArr = num.toString().split('').map(iNum => parseInt(iNum, 10));
+        let isDivisible = true;
+        for (let digit of digitArr) {
+            if (digit === 0) {
+                isDivisible = false;
+            } else if (num % digit != 0) {
+                isDivisible = false
+            };  
+        };
+        if (isDivisible === true) {
+            answerArr.push(num);
+        };
+    };
+    return answerArr;
 };
+
