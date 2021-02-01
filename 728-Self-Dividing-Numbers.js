@@ -45,3 +45,9 @@ const selfDividingNumbers = (left, right) => {
     return answerArr;
 };
 
+// Submission results:
+
+// Success
+// Details 
+// Runtime: 140 ms, faster than 5.01% of JavaScript online submissions for Self Dividing Numbers.
+// Memory Usage: 46 MB, less than 6.49% of JavaScript online submissions for Self Dividing Numbers.
