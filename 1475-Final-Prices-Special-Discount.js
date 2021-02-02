@@ -35,6 +35,26 @@
 //  * @param {number[]} prices
 //  * @return {number[]}
 //  */
-var finalPrices = function(prices) {
-    
+const finalPrices = (prices) => {
+    let pricesArr = [];
+    for (let i = 0; i < prices.length; i++) {
+        let j = i + 1;
+        while (j > i) {
+            if (prices[j] <= prices[i]) {
+                pricesArr.push(prices[i] - prices[j]);
+                j = -1;
+            } else if (prices[j] > prices[i]) {
+                j++;
+            } else {
+                pricesArr.push(prices[i]);
+                j = -1;
+            };
+        };
+    };
+    return pricesArr;
 };
+
+
+finalPrices([8,4,6,2,3]);
+// Expected Output: [4,2,4,2,3]
+
