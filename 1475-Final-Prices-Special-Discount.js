@@ -91,5 +91,30 @@ const finalPrices = (prices) => {
 //     return arr;
 // };
 
+// -----------
+
+// var finalPrices = function(prices) {
+//     let result = [];
+//     for(let i = 0; i < prices.length; i++) {
+//         if(prices[i] > prices[i+1]) {
+//             result.push(prices[i] - prices[i+1])
+//         } else {
+//             let flag = true;
+//             for(let j = i+1; j < prices.length; j++) {
+//                 if(prices[i] >= prices[j]) {
+//                     result.push(prices[i] - prices[j])
+//                     flag = false;
+//                     break;
+//                 }
+//             }
+//             if(flag) {
+//                 result.push(prices[i])
+//             }
+//         }
+//     }
+//     return result;
+// };
+
+
 finalPrices([8,4,6,2,3]);
 // Expected Output: [4,2,4,2,3]
