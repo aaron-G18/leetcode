@@ -69,3 +69,10 @@ const sumOfDigits = (n) => {
 
 
 countBalls(19, 28);
+
+// Submission results:
+
+// Success
+// Details 
+// Runtime: 164 ms, faster than 54.55% of JavaScript online submissions for Maximum Number of Balls in a Box.
+// Memory Usage: 45.5 MB, less than 53.64% of JavaScript online submissions for Maximum Number of Balls in a Box.
