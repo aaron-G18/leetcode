@@ -43,6 +43,39 @@
  * @param {number} highLimit
  * @return {number}
  */
-var countBalls = function(lowLimit, highLimit) {
+const countBalls = (lowLimit, highLimit) => {
     
+}
+
+
+
+
+
+var countBalls = function(lowLimit, highLimit) {
+    var l = Array(lowLimit-1).fill(0) ;
+    console.log("l Array= ", l);
+    for(let i=lowLimit;i<=highLimit;i++){
+        var sum = sumOfDigits(i) ;
+        if(l.length<sum){
+            console.log("sum= ", sum);
+            l.push(1) ;
+            console.log("l updated= ", l);
+        }
+        else{
+            console.log("sum= ", sum);
+            l[sum-1] +=1 ;
+            console.log("l updated= ", l);
+        }
+    }
+    return Math.max(...l) ; 
 };
+function sumOfDigits(n){
+    let sum = 0;
+    while(n>0){
+        sum += n%10; 
+        n = Math.floor(n/10);
+    }
+    return sum;
+}
+
+countBalls(19, 28);
