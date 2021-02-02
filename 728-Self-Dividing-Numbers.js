@@ -80,24 +80,22 @@ const selfDividingNumbers = (left, right) => {
 
 // var selfDividingNumbers = function(left, right) {
 //     let res = [];
-    
 //     for (let i = left; i <= right; i++) {
 //         let num = i;
-        
 //         while (num >= 1) {
-//             if (num % 10 === 0) { break; }
-            
+//             if (num % 10 === 0) { 
+//                 break; 
+//             };
 //             if (i % (num % 10) === 0) {
 //                  num = Math.floor(num / 10);
 //             } else {
 //                 break;
-//             }
-//         }
-        
+//             };
+//         };
 //         if (num < 1) {
 //             res.push(i);
-//         }
-//     }
-    
+//             console.log("res= ", res);
+//         };
+//     };
 //     return res;
 // };
