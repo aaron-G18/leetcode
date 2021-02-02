@@ -58,3 +58,9 @@ const finalPrices = (prices) => {
 finalPrices([8,4,6,2,3]);
 // Expected Output: [4,2,4,2,3]
 
+//Submission results:
+
+// Success
+// Details 
+// Runtime: 96 ms, faster than 28.32% of JavaScript online submissions for Final Prices With a Special Discount in a Shop.
+// Memory Usage: 40.6 MB, less than 39.07% of JavaScript online submissions for Final Prices With a Special Discount in a Shop.
