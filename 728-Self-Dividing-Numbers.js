@@ -51,3 +51,29 @@ const selfDividingNumbers = (left, right) => {
 // Details 
 // Runtime: 140 ms, faster than 5.01% of JavaScript online submissions for Self Dividing Numbers.
 // Memory Usage: 46 MB, less than 6.49% of JavaScript online submissions for Self Dividing Numbers.
+
+// Another solution similar to mine:
+
+// var selfDividingNumbers = function(left, right) {
+//     const result = []
+    
+//     for(let i=left; i<=right; i++) {
+//         const str = i.toString()
+//         let j
+        
+//         for(j=0; j<str.length; j++) {
+//             if(str[j] === '0') {
+//                 break
+//             }
+//             if(i % parseInt(str[j]) !== 0) {
+//                 break
+//             }
+//         }
+        
+//         if(j === str.length) {
+//             result.push(i)
+//         }
+//     }
+    
+//     return result
+// };
