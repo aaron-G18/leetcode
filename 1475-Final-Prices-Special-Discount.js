@@ -55,8 +55,7 @@ const finalPrices = (prices) => {
 };
 
 
-finalPrices([8,4,6,2,3]);
-// Expected Output: [4,2,4,2,3]
+
 
 //Submission results:
 
@@ -64,3 +63,33 @@ finalPrices([8,4,6,2,3]);
 // Details 
 // Runtime: 96 ms, faster than 28.32% of JavaScript online submissions for Final Prices With a Special Discount in a Shop.
 // Memory Usage: 40.6 MB, less than 39.07% of JavaScript online submissions for Final Prices With a Special Discount in a Shop.
+
+// Other solutions:
+
+// var finalPrices = function(prices) {
+//     let arr = [];
+//     let min = 0;
+//     for (let i = 1; i < prices.length; i++) {
+//         console.log("*******");
+//         console.log("i = ", i);
+//         console.log("min= ", min);
+//         if (prices[min] >= prices[i]) {
+//             arr.push(prices[min] - prices[i]);
+//             min++;
+//             i = min;
+//             console.log("i = ", i);
+//         } else if (i === prices.length - 1) {
+//             arr.push(prices[min]);
+//             min++;
+//             i = min;
+//             console.log("else if hit");
+//         }
+//         console.log("arr = ", arr);
+//     }
+//     arr.push(prices[prices.length - 1]);
+//     console.log(arr);
+//     return arr;
+// };
+
+finalPrices([8,4,6,2,3]);
+// Expected Output: [4,2,4,2,3]
