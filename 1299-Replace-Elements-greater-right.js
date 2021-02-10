@@ -58,4 +58,10 @@ const replaceElements = (arr) => {
 };
 
 replaceElements([56903,18666,60499,57517,26961]);
-// OExpected [60499,60499,57517,26961,-1]
+// Expected [60499,60499,57517,26961,-1]
+
+// Submission results:
+// Success
+// Details 
+// Runtime: 236 ms, faster than 38.69% of JavaScript online submissions for Replace Elements with Greatest Element on Right Side.
+// Memory Usage: 42 MB, less than 87.44% of JavaScript online submissions for Replace Elements with Greatest Element on Right Side.
