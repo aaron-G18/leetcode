@@ -62,5 +62,5 @@ replaceElements([56903,18666,60499,57517,26961]);
 // Submission results:
 // Success
 // Details 
-// Runtime: 236 ms, faster than 38.69% of JavaScript online submissions for Replace Elements with Greatest Element on Right Side.
-// Memory Usage: 42 MB, less than 87.44% of JavaScript online submissions for Replace Elements with Greatest Element on Right Side.
+// Runtime: 228 ms, faster than 42.31% of JavaScript online submissions for Replace Elements with Greatest Element on Right Side.
+// Memory Usage: 42.1 MB, less than 77.49% of JavaScript online submissions for Replace Elements with Greatest Element on Right Side.
