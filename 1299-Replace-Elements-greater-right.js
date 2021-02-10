@@ -38,15 +38,17 @@ const replaceElements = (arr) => {
         arr[0] = -1;
     } else {
         for (let i = 0; i < arr.length - 2; i++) {
-            let currNum = arr[i];
-            let greater = arr[i];
+            let currNum = arr[i + 1];
+            let greater = arr[i + 1];
             for (let j = i + 1; j < arr.length; j++) {
-                
-                if (arr[j] > arr[i + 1] || arr[j] > arr[i]) {
+                if (arr[j] > greater) {
                     greater = arr[j];
+                    console.log("arr[j] =", arr[j], "arr[i]= ", arr[i], "greater= ", greater);
                 };
             };
             arr[i] = greater;
+            console.log("assigned greater= ", greater);
+            
         };
         arr[arr.length - 2] = arr[arr.length - 1];
         arr[arr.length - 1] = -1; 
@@ -55,5 +57,5 @@ const replaceElements = (arr) => {
     return arr;
 };
 
-replaceElements([17,18,5,4,6,1]);
-// Output: [18,6,6,6,1,-1]
+replaceElements([56903,18666,60499,57517,26961]);
+// OExpected [60499,60499,57517,26961,-1]
