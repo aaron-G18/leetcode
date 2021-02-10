@@ -38,7 +38,6 @@ const replaceElements = (arr) => {
         arr[0] = -1;
     } else {
         for (let i = 0; i < arr.length - 2; i++) {
-            let currNum = arr[i + 1];
             let greater = arr[i + 1];
             for (let j = i + 1; j < arr.length; j++) {
                 if (arr[j] > greater) {
