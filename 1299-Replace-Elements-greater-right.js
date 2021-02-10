@@ -33,6 +33,27 @@
 //  * @param {number[]} arr
 //  * @return {number[]}
 //  */
-var replaceElements = function(arr) {
-    
+const replaceElements = (arr) => {
+    if (arr.length === 1) {
+        arr[0] = -1;
+    } else {
+        for (let i = 0; i < arr.length - 2; i++) {
+            let currNum = arr[i];
+            let greater = arr[i];
+            for (let j = i + 1; j < arr.length; j++) {
+                
+                if (arr[j] > arr[i + 1] || arr[j] > arr[i]) {
+                    greater = arr[j];
+                };
+            };
+            arr[i] = greater;
+        };
+        arr[arr.length - 2] = arr[arr.length - 1];
+        arr[arr.length - 1] = -1; 
+    };
+    console.log(arr);
+    return arr;
 };
+
+replaceElements([17,18,5,4,6,1]);
+// Output: [18,6,6,6,1,-1]
