@@ -66,7 +66,7 @@ replaceElements([56903,18666,60499,57517,26961]);
 // Memory Usage: 42.1 MB, less than 77.49% of JavaScript online submissions for Replace Elements with Greatest Element on Right Side.
 
 
-// Cleaner solution from site. Starts from the end of the array.
+// Cleaner solution from site. Starts from the end of the array and moves toward the beginning storing the greatest number as it goes.
 
 var replaceElements = function(arr) {
     let maxSeen = -Infinity;
