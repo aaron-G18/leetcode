@@ -67,6 +67,7 @@ replaceElements([56903,18666,60499,57517,26961]);
 
 
 // Cleaner solution from site. Starts from the end of the array and moves toward the beginning storing the greatest number as it goes.
+// much better than mine (mine has nested for loops).
 
 var replaceElements = function(arr) {
     let maxSeen = -Infinity;
