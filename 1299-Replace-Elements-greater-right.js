@@ -64,3 +64,21 @@ replaceElements([56903,18666,60499,57517,26961]);
 // Details 
 // Runtime: 228 ms, faster than 42.31% of JavaScript online submissions for Replace Elements with Greatest Element on Right Side.
 // Memory Usage: 42.1 MB, less than 77.49% of JavaScript online submissions for Replace Elements with Greatest Element on Right Side.
+
+
+// Cleaner solution from site. Starts from the end of the array.
+
+var replaceElements = function(arr) {
+    let maxSeen = -Infinity;
+    let last = -1;
+    
+    for (let i = arr.length - 1 ; i >= 0; i --) {
+		// initial last will be -1 and after that it will be the max seen till now
+        maxSeen = Math.max(arr[i], last);
+		// assign the last to the current index (maxSeen encountered before the current i)
+        arr[i] = last;
+		// update the last with maxSeen
+        last = maxSeen;
+    }
+    return arr;
+};
