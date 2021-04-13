@@ -22,6 +22,21 @@
  * @param {number[]} A
  * @return {number[]}
  */
- var sortArrayByParity = function(A) {
-    
+
+const sortArrayByParity = (A) => {
+    let evenArr = [];
+    let oddArr = [];
+    for (let num of A) {
+        if (num % 2 === 0) {
+            evenArr.push(num)
+        } else {
+            oddArr.push(num)
+        };
+    };
+    let result = evenArr.concat(oddArr);
 };
+
+sortArrayByParity([3,1,2,4]);
+
+
+
