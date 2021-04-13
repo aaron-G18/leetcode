@@ -32,7 +32,7 @@
  * @param {number[]} nums
  * @return {number}
  */
- const sumOfUnique = (nums) => {
+const sumOfUnique = (nums) => {
     let uniqueArr = {};
     let sum = 0;
     for(let n of nums) {
@@ -50,5 +50,13 @@
 
 
 sumOfUnique([1,2,3,2]);
+
+
+// Submission results:
+
+// Success
+// Details 
+// Runtime: 84 ms, faster than 26.34% of JavaScript online submissions for Sum of Unique Elements.
+// Memory Usage: 38.7 MB, less than 73.02% of JavaScript online submissions for Sum of Unique Elements.
 
 
