@@ -32,8 +32,23 @@
  * @param {number[]} nums
  * @return {number}
  */
-const sumOfUnique = (nums) => {
-
+ const sumOfUnique = (nums) => {
+    let uniqueArr = {};
+    let sum = 0;
+    for(let n of nums) {
+      if(uniqueArr[n] === undefined) { //Encountering first time, add to sum
+        sum += n;
+        uniqueArr[n] = true;
+      } else if(uniqueArr[n]) { //Encountering second time, subtract from sum
+        sum -= n;
+        uniqueArr[n] = false; //Set to false so third or more occurrences will not get added to sum
+      }
+    }
+    console.log(sum);
+    return sum;
 };
+
+
+sumOfUnique([1,2,3,2]);
 
 
