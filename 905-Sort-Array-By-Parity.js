@@ -34,6 +34,7 @@ const sortArrayByParity = (A) => {
         };
     };
     let result = evenArr.concat(oddArr);
+    return result;
 };
 
 sortArrayByParity([3,1,2,4]);
