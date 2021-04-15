@@ -41,6 +41,7 @@ sortArrayByParity([3,1,2,4]);
 
 
 // Submission results:
+
 // Success
 // Details 
 // Runtime: 96 ms, faster than 73.24% of JavaScript online submissions for Sort Array By Parity.
