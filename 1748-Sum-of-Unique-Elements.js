@@ -44,14 +44,11 @@ const sumOfUnique = (nums) => {
         uniqueArr[n] = false; //Set to false so third or more occurrences will not get added to sum
       }
     }
-    console.log(sum);
     return sum;
 };
 
 
 sumOfUnique([1,2,3,2]);
-
-
 
 
 // Submission results:
