@@ -4,7 +4,6 @@
 
 // You may return any answer array that satisfies this condition.
 
- 
 
 // Example 1:
 
