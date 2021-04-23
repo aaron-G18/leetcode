@@ -63,3 +63,15 @@ const judgeCircle = (moves) => {
 // Details 
 // Runtime: 88 ms, faster than 56.98% of JavaScript online submissions for Robot Return to Origin.
 // Memory Usage: 40.8 MB, less than 35.47% of JavaScript online submissions for Robot Return to Origin.
+
+// Another solution from the page using hashmap:
+
+var judgeCircle = function(moves) {
+    let map = {};
+    
+    for (let char of moves){
+        map[char] = map[char] + 1 || 1
+    };
+    
+    return (map['L'] === map['R'] && map['U'] === map['D']); 
+ };
