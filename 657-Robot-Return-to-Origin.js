@@ -36,6 +36,23 @@
 //  * @param {string} moves
 //  * @return {boolean}
 //  */
- var judgeCircle = function(moves) {
-    
+const judgeCircle = (moves) => {
+    let leftRight = 0;
+    let upDown = 0;
+    for (let letter of moves) {
+        if (letter === "L") {
+            leftRight++;
+        } else if (letter === "R") {
+            leftRight--;
+        } else if (letter === "U") {
+            upDown++;
+        } else {
+            upDown--;
+        };
+    };
+    if (leftRight === 0 && upDown === 0) {
+        return true;
+    } else {
+        return false;
+    };
 };
