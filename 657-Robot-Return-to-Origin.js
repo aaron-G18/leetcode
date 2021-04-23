@@ -56,3 +56,10 @@ const judgeCircle = (moves) => {
         return false;
     };
 };
+
+
+// Submission results:
+// Success
+// Details 
+// Runtime: 88 ms, faster than 56.98% of JavaScript online submissions for Robot Return to Origin.
+// Memory Usage: 40.8 MB, less than 35.47% of JavaScript online submissions for Robot Return to Origin.
