@@ -49,3 +49,14 @@ class Solution(object):
                     indices.append(j)
 
                     return indices
+
+# solution without nested loops
+class Solution(object):
+    def twoSum(self, nums, target):
+        passed = {}
+        for i in range(len(nums)):
+            diff = target - nums[i]
+            if diff in passed:
+                return [passed[diff], i]
+            else:
+                passed[nums[i]] = i
